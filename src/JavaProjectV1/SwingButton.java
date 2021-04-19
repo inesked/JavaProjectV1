@@ -1,6 +1,8 @@
+package JavaProjectV1;
+
 import javax.swing.*;
+import javax.swing.JButton;
 import java.awt.*;
-//coucou
 
 public class SwingButton extends JFrame{
 
@@ -16,16 +18,16 @@ public class SwingButton extends JFrame{
 	          
 	        this.add(p1, BorderLayout.CENTER);  
 
-	        this.setSize(550,120);    
+	        this.setSize(550,120); 
+	        this.setContentPane(p1);
+	        this.setResizable(false);   //the frame is not resizable
+	        this.setAlwaysOnTop(true);
 	        this.setLayout(new GridLayout(3,1));  
 	        this.setVisible(true);
-	        this.setResizable(true);
+	        //when we click on the red cross, the program stops running
+	        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
 	        this.setLocationRelativeTo(null);
-
+	       // this.getContentPane().add(p1);
 	            }
-
-	public static void main(String[] args) throws Exception {
-		 new SwingButton();
-	}
 
 }
