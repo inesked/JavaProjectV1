@@ -5,9 +5,9 @@ import java.awt.geom.Line2D;
 import javax.swing.JComponent;
 import java.awt.Color;
 import java.awt.Rectangle;
-/*
+
 public class rectangle (int x, int y, int width, int height) {
-/*	p2 = new rectangle();
+	p2 = new rectangle();
     p2.add(new Rectangle(0, 0, 120, 60));
     p2.setLayout(new GridLayout(1,2));
     p2.setColor(Color.RED);
@@ -20,4 +20,4 @@ public class rectangle (int x, int y, int width, int height) {
 }
 public static void main(String[] args) throws Exception {
 	 new rectangle();
-}*/
+}
