@@ -12,5 +12,6 @@ public class AppPaint {
 		 System.out.println("your choice :"+choice);
 		 // now we succeeded to get the choice of the user
 		 // we can use it 
+		
 	}
 }
