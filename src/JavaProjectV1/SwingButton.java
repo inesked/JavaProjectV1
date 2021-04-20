@@ -15,7 +15,7 @@ public class SwingButton extends JFrame{
 	private JButton bouton3= new JButton("3. Filled Rectangle");
 	private JButton bouton4= new JButton("4. Outlined Oval");
 	private JButton bouton5= new JButton("5. Filled Oval");
-	private JPanel container = new JPanel();
+	//private JPanel container = new JPanel();
 	private int userChoice;
 	
 	
@@ -46,20 +46,20 @@ public class SwingButton extends JFrame{
 	        this.setVisible(true);
 	  }
 	 
-	 //this class listens to our firt button
+	 //this class listens to our first button
 	 class Bouton1Listener implements ActionListener{
 			//redefinition of the actionPerformed() methods
 		 public void actionPerformed(ActionEvent arg0){
 			 //just to show that the click works
 				System.out.println("vous avez cliqué sur le bouton 1");
 			//we will have to use this userChoice value later 
-				userChoice = 1;
+				userChoice=1;
 			}
 		}
 	 class Bouton2Listener implements ActionListener{
 			public void actionPerformed(ActionEvent e){
 				System.out.println("vous avez cliqué sur le bouton 2");
-				userChoice= 2;
+				userChoice=2;
 			}
 		}
 	 class Bouton3Listener implements ActionListener{
@@ -80,4 +80,9 @@ public class SwingButton extends JFrame{
 				userChoice=5;
 			}
 		}
+	 public int getChoice(){
+			return userChoice;
+		}
+	// once the user clicked on a button, the frame should close
+	 // and the drawing frame should open to replace it
 }
