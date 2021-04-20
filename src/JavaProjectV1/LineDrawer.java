@@ -1,10 +1,18 @@
-/*
+package JavaProjectV1;
+
+import java.awt.*;
 import java.awt.Graphics;
 import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionAdapter;
+import java.awt.event.MouseMotionListener;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-//import java.swing.*;
+import javax.swing.*;
 
-package JavaProjectV1;
+import javax.swing.JFrame;
+import javax.swing.plaf.basic.BasicTabbedPaneUI.MouseHandler;
+
+
 
 public class LineDrawer extends JFrame {
 	private int xbegin = 0;
@@ -13,16 +21,16 @@ public class LineDrawer extends JFrame {
 	private int yend = 0;
 	
 	public LineDrawer()	{
-		setTitle("Line Drawer");
+		//setTitle("Line Drawer");
 		setSize(400, 500);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		addMouseListener(mouseHandler);
-		addMouseMtionListener(mouseMotionHandler)
+		addMouseMotionListener(mouseMotionHandler);
 		setVisible(true);
 	};
 	
-public MousListener mouseHandler = new mouseAdapter()	{
+public MouseListener mouseHandler = new MouseAdapter()	{
 	@Override
 	public void mousePressed(MouseEvent e){
 		xbegin=xend = e.getX();
@@ -36,7 +44,7 @@ public MousListener mouseHandler = new mouseAdapter()	{
 		repaint();
 		}
 };
-	public MousemotionListener mouseMotionHandler = new MouseMotionAdapter(){
+	public MouseMotionListener mouseMotionHandler = new MouseMotionAdapter(){
 		@Override
 		public void mouseDragged(MouseEvent e){
 			xend = e.getX();
@@ -44,13 +52,10 @@ public MousListener mouseHandler = new mouseAdapter()	{
 			repaint();
 		}
 	};
-	@Ovveride
+	@Override
 	public void paint(Graphics g){
 		super.paint(g);
 		g.drawLine(xbegin,ybegin,xend,yend);
 	}
-	public static void main(String[] args) {
-		LineDrawer l = new LineDrawer();
-		}
+	
 }
-*/
