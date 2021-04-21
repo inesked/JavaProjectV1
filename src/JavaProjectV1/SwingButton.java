@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+@SuppressWarnings("serial")
 public class SwingButton extends JFrame{
 
 	private JButton bouton1= new JButton("1. Line");
@@ -51,6 +52,7 @@ public class SwingButton extends JFrame{
 			//redefinition of the actionPerformed() methods
 		 public void actionPerformed(ActionEvent arg0){
 			 //just to show that the click works
+			 LineDrawer l = new LineDrawer();
 				System.out.println("vous avez cliqué sur le bouton 1");
 			//we will have to use this userChoice value later 
 				userChoice=1;
@@ -85,4 +87,7 @@ public class SwingButton extends JFrame{
 		}
 	// once the user clicked on a button, the frame should close
 	 // and the drawing frame should open to replace it
+	 
+	 
+	
 }

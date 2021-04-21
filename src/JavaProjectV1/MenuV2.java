@@ -1,4 +1,4 @@
-//package JavaProjectV1;
+/*package JavaProjectV1;
 import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.Color;
@@ -52,13 +52,14 @@ public class MenuV2 extends JFrame implements ActionListener {
 	private JPanel panel5;
 	private JLabel consigne1;
 	private JButton boutonretour1;
+	private int userChoice;
 	
 	
 public MenuV2(){
 	
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
    
-	setTitle("Drawing Shape");
+	setTitle("Inès JAVA - Drawing Shape");
     setSize(1000, 1000);
      setLocationRelativeTo(null);
     setVisible(true);
@@ -70,6 +71,7 @@ public MenuV2(){
     createPanel();
     add(panel);
     //add(labelN);
+    
 }
 
 public void createPanel(){
@@ -78,13 +80,6 @@ public void createPanel(){
     panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
     panel.setLayout(new GridLayout(0, 1));
     menu=new JLabel("Projet Inès");
-    
-   bouton1= new JButton("1. Line");
-   bouton2= new JButton("2. Outlined Rectangle");
-   bouton3= new JButton("3. Filled Rectangle");
-   bouton4= new JButton("4. Outlined Oval");
-   bouton5= new JButton("5. Filled Oval");
-
    
    bouton1.addActionListener(this);
    bouton2.addActionListener(this);
@@ -263,6 +258,10 @@ if(source==bouton1)
 }
 }
 
+public int getChoice() {
+	return userChoice;
+}
+}
 
 
 
@@ -273,9 +272,7 @@ if(source==bouton1)
 
 public static void main(String[] args) throws Exception {
 new MenuV2();
-}
-}
-
+}*/
 
 
 

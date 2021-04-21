@@ -3,8 +3,9 @@ package JavaProjectV1;
 public class AppPaint {
 	public static void main(String[] args) throws Exception {
 		 SwingButton menu= new SwingButton();
+		 //MenuV2 menu= new MenuV2();
 		 int choice; 
-		 LineDrawer l = new LineDrawer();
+		// LineDrawer l = new LineDrawer();
 		 //we let the time for the user to select an item 
 		 // in the menu before attributing a value to the
 		 // variable choice, otherwise choice=0;
