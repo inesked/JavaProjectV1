@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package JavaProjectV1;
+=======
+/*package JavaProjectV1;
+>>>>>>> 0111ebdfe74e56ddaa573f8bee9db58f58ffd097
 =======
 /*package JavaProjectV1;
 >>>>>>> 0111ebdfe74e56ddaa573f8bee9db58f58ffd097
@@ -281,6 +285,9 @@ public int getChoice() {
 public static void main(String[] args) throws Exception {
 new MenuV2();
 }*/
+<<<<<<< HEAD
+
+=======
 >>>>>>> 0111ebdfe74e56ddaa573f8bee9db58f58ffd097
 
 

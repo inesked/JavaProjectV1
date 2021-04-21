@@ -1,7 +1,6 @@
 package JavaProjectV1;
 
 import javax.swing.*;
-
 import javax.swing.JButton;
 
 import java.awt.*;
@@ -56,6 +55,8 @@ public class SwingButton extends JFrame{
 <<<<<<< HEAD
 			 Fenetre fen = new Fenetre();
 			 System.out.println("vous avez cliqué sur le bouton 1");
+			 //LineDrawer l = new LineDrawer();
+
 =======
 			 LineDrawer l = new LineDrawer();
 				System.out.println("vous avez cliqué sur le bouton 1");
@@ -90,10 +91,10 @@ public class SwingButton extends JFrame{
 		}
 	 public int getChoice(){
 			return userChoice;
-		}
 <<<<<<< HEAD
-
+	 }
 =======
+		}
 	// once the user clicked on a button, the frame should close
 	 // and the drawing frame should open to replace it
 	 

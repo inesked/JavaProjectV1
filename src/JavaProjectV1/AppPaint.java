@@ -1,12 +1,19 @@
 package JavaProjectV1;
 
+import javax.swing.JFrame;
+
 public class AppPaint {
 	public static void main(String[] args) throws Exception {
 <<<<<<< HEAD
+
 		SwingButton menu= new SwingButton();
 		//new SwingButton(); 
 		//int choice; 
 		 //LineDrawer l = new LineDrawer();
+		 //MenuV2 menu= new MenuV2();
+		// int choice; 
+		// LineDrawer l = new LineDrawer();
+
 =======
 		 SwingButton menu= new SwingButton();
 		 //MenuV2 menu= new MenuV2();
@@ -20,8 +27,14 @@ public class AppPaint {
 		 //choice = MenuV2.getChoice();
 		 //System.out.println("your choice :"+choice);
 		 
-		 // now we succeeded to get the choice of the user
-		 // we can use it 
+		 //menu.setEnabled(true);
+		 //Thread.sleep(5000);
+		 //the user cannot click on another item 
+		 // nevertheless the red cross button doesn't work anymore
+		 //menu.setEnabled(false);
+		// choice = menu.getChoice();
+		// System.out.println("your choice :"+choice);
+
 		
 	}
 }
