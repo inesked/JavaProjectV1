@@ -16,30 +16,22 @@ import javax.swing.JFrame;
 
 
 
-<<<<<<< HEAD
 
 @SuppressWarnings("serial")
 
-=======
-@SuppressWarnings("serial")
->>>>>>> 0111ebdfe74e56ddaa573f8bee9db58f58ffd097
 public class LineDrawer extends JFrame {
 	private int xbegin = 0;
 	private int ybegin = 0;
 	private int xend = 0;
 	private int yend = 0;
-<<<<<<< HEAD
+
 
 	private ArrayList<Point> points = new ArrayList<Point>();
 
 	private int xcurrent = 0;
 	private int ycurrent = 0;
 
-=======
-	private int xcurrent = 0;
-	private int ycurrent = 0;
-	
->>>>>>> 0111ebdfe74e56ddaa573f8bee9db58f58ffd097
+
 	public LineDrawer()	{
 		//setTitle("Line Drawer");
 		setSize(400, 500);
@@ -74,6 +66,15 @@ public MouseListener mouseHandler = new MouseAdapter()	{
 			xend = e.getX();
 			yend = e.getY();
 			points.add(new Point(e.getX(),e.getY()));
+			repaint();
+		
+		}
+
+		@Override
+		public void mouseMoved(MouseEvent arg0) {
+			xcurrent = arg0.getX();
+			ycurrent = arg0.getY();
+			super.mouseMoved(arg0);
 			repaint();
 		
 		}

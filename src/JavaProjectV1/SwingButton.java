@@ -52,15 +52,11 @@ public class SwingButton extends JFrame{
 			//redefinition of the actionPerformed() methods
 		 public void actionPerformed(ActionEvent arg0){
 			 //just to show that the click works
-<<<<<<< HEAD
+
 			 Fenetre fen = new Fenetre();
 			 System.out.println("vous avez cliqué sur le bouton 1");
 			 //LineDrawer l = new LineDrawer();
 
-=======
-			 LineDrawer l = new LineDrawer();
-				System.out.println("vous avez cliqué sur le bouton 1");
->>>>>>> 0111ebdfe74e56ddaa573f8bee9db58f58ffd097
 			//we will have to use this userChoice value later 
 				userChoice=1;
 			}
@@ -91,14 +87,7 @@ public class SwingButton extends JFrame{
 		}
 	 public int getChoice(){
 			return userChoice;
-<<<<<<< HEAD
 	 }
-=======
-		}
-	// once the user clicked on a button, the frame should close
-	 // and the drawing frame should open to replace it
+		} 
 	 
-	 
-	
->>>>>>> 0111ebdfe74e56ddaa573f8bee9db58f58ffd097
 }
