@@ -75,12 +75,14 @@ public class SwingButton extends JFrame{
 		}
 	 class Bouton4Listener implements ActionListener{
 			public void actionPerformed(ActionEvent g){
-				userChoice =4;
+				FenetreOval fenov = new FenetreOval();
 				System.out.println("vous avez cliqué sur le bouton 4");
+			userChoice =4;
 			}
 		}
 	 class Bouton5Listener implements ActionListener{
 			public void actionPerformed(ActionEvent h){
+				FenetreOvalFilled fenovfilled = new FenetreOvalFilled();
 				System.out.println("vous avez cliqué sur le bouton 5");
 				userChoice=5;
 			}
@@ -88,6 +90,4 @@ public class SwingButton extends JFrame{
 	 public int getChoice(){
 			return userChoice;
 	 }
-		} 
-	 
-}
+} 
