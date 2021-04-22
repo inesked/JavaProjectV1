@@ -87,6 +87,8 @@ public class SwingButton extends JFrame{
 				userChoice=5;
 			}
 		}
+	 
+	 
 	 public int getChoice(){
 			return userChoice;
 	 }

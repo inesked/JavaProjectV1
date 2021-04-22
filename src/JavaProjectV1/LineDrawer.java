@@ -1,4 +1,4 @@
-package JavaProjectV1;
+/*package JavaProjectV1;
 
 //import java.awt.*;
 import java.awt.Graphics;
@@ -105,3 +105,4 @@ public MouseListener mouseHandler = new MouseAdapter()	{
 	}
 	
 }
+*/

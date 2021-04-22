@@ -24,25 +24,6 @@ public class DrawOval extends JPanel{
 	private int xinit=0, xend=0, yinit=0, yend=0;
 	
 	private ArrayList<Point> points = new ArrayList<Point>();
-	public class Point {
-	private int x, y;
-		public Point (int x, int y){
-			this.x=x;
-			this.y=y;
-		}
-		public int getX(){
-			return x;
-		}
-		public void setX(int x){
-			this.x=x;
-		}
-		public int getY(){
-			return y;
-		}
-		public void setY(int y){
-			this.y=y;
-		}
-	}
 	
 	/* public void paintComponent(Graphics g) {
 		 
