@@ -33,7 +33,6 @@ public class AppPaint {
 		 //menu.setEnabled(false);
 		// choice = menu.getChoice();
 		// System.out.println("your choice :"+choice);
-
 		
 	}
 }

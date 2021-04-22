@@ -11,14 +11,12 @@ import java.awt.event.ActionListener;
 public class SwingButton extends JFrame{
 
 	private JButton bouton1= new JButton("1. Line");
-	private JButton bouton2= new JButton("2. Outlined Rectangle");
-	private JButton bouton3= new JButton("3. Filled Rectangle");
+	private JButton bouton2= new JButton("2. Filled Rectangle");
+	private JButton bouton3= new JButton("3. Outlined Rectangle");
 	private JButton bouton4= new JButton("4. Outlined Oval");
 	private JButton bouton5= new JButton("5. Filled Oval");
 	//private JPanel container = new JPanel();
 	private int userChoice;
-	
-	
 	
 	public SwingButton(){
 		this.setLayout(new GridLayout(3,2));
@@ -53,7 +51,7 @@ public class SwingButton extends JFrame{
 		 public void actionPerformed(ActionEvent arg0){
 			 //just to show that the click works
 
-			 Fenetre fen = new Fenetre();
+			 Fenetre1 fen = new Fenetre1();
 			 System.out.println("vous avez cliqué sur le bouton 1");
 			 //LineDrawer l = new LineDrawer();
 
@@ -63,12 +61,14 @@ public class SwingButton extends JFrame{
 		}
 	 class Bouton2Listener implements ActionListener{
 			public void actionPerformed(ActionEvent e){
+				Fenetre2 fen2= new Fenetre2();
 				System.out.println("vous avez cliqué sur le bouton 2");
 				userChoice=2;
 			}
 		}
 	 class Bouton3Listener implements ActionListener{
 			public void actionPerformed(ActionEvent f){
+				Fenetre3 fen3= new Fenetre3();
 				System.out.println("vous avez cliqué sur le bouton 3");
 				userChoice = 3;
 			}
@@ -88,6 +88,6 @@ public class SwingButton extends JFrame{
 	 public int getChoice(){
 			return userChoice;
 	 }
-		} 
+} 
 	 
-}
+

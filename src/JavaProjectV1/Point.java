@@ -1,6 +1,6 @@
 package JavaProjectV1;
 
-/*public class Point {
+public class Point {
 	
 	private int x, y;
 	
@@ -27,4 +27,4 @@ package JavaProjectV1;
 	public void setY(int y){
 		this.y=y;
 	}
-}*/
+}
