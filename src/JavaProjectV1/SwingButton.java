@@ -44,16 +44,31 @@ public class SwingButton extends JFrame{
 	      
 	    this.setVisible(true);
 	  }
-	 
+	/* public void UChoice(){
+		  if (userChoice==1){
+			  DrawLine line = new DrawLine();
+		  }
+		  if (userChoice==2){
+			  DrawFillRect fRect = new DrawFillRect();
+		  }
+		  if (userChoice==3){
+			  DrawRect rect= new DrawRect();
+		  }
+		  if (userChoice==4){
+			  DrawOval oval = new DrawOval();
+		  }
+		  if (userChoice==5){
+			  FillOval fOval= new FillOval();
+		  }
+	 }*/
 	 //this class listens to our first button
 	 class Bouton1Listener implements ActionListener{
 			//redefinition of the actionPerformed() methods
 		 public void actionPerformed(ActionEvent arg0){
 			 //just to show that the click works
-
-			 Fenetre1 fen = new Fenetre1();
+			 Fenetre1 fen1= new Fenetre1();
 			 System.out.println("vous avez cliqué sur le bouton 1");
-			 //LineDrawer l = new LineDrawer();
+			 DrawLine l = new DrawLine();
 
 			//we will have to use this userChoice value later 
 				userChoice=1;
@@ -77,7 +92,7 @@ public class SwingButton extends JFrame{
 			public void actionPerformed(ActionEvent g){
 				FenetreOval fenov = new FenetreOval();
 				System.out.println("vous avez cliqué sur le bouton 4");
-			userChoice =4;
+				userChoice =4;
 			}
 		}
 	 class Bouton5Listener implements ActionListener{
@@ -87,9 +102,9 @@ public class SwingButton extends JFrame{
 				userChoice=5;
 			}
 		}
-	 
-	 
 	 public int getChoice(){
 			return userChoice;
 	 }
+	
+	
 } 

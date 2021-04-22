@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import javax.swing.JPanel;
 
 //this program is called when userChoice =1 it draws a line
-public class DrawPanel1 extends JPanel{
+public class DrawLine extends JPanel{
 	//Position X du pointeur
 	private int x1=0, x2=0;
 	//Position Y du pointeur
@@ -17,7 +17,7 @@ public class DrawPanel1 extends JPanel{
 	//Collection de points ! 
 	private ArrayList<Point> points = new ArrayList<Point>();
 	
-	public DrawPanel1(){
+	public DrawLine(){
 		
 		this.addMouseListener(new MouseAdapter(){
 			public void mousePressed(MouseEvent e){
