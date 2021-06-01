@@ -4,6 +4,6 @@ import javax.swing.JFrame;
 
 public class AppPaint {
 	public static void main(String[] args) throws Exception {
-		SwingButton menu= new SwingButton();
+		Window menu = new Window();
 	}
 }
